@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in snap_deploy.gemspec
+# Specify your gem's dependencies in snap_provision.gemspec
 gemspec
 
 group :development, :test do

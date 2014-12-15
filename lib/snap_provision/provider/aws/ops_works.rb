@@ -1,7 +1,7 @@
 require 'timeout'
 require 'json'
 
-class SnapDeploy::Provider::AWS::OpsWorks < Clamp::Command
+class SnapProvision::Provider::AWS::OpsWorks < Clamp::Command
 
   option '--app-id', "APP_ID", "The application ID", :required => true
   option '--[no-]wait',    :flag, 'Wait until (or not) deployed and return the deployment status.', :default => true

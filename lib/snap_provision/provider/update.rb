@@ -1,12 +1,12 @@
 require 'rake'
 require 'rake/file_utils_ext'
 
-class SnapDeploy::Provider::Update < Clamp::Command
+class SnapProvision::Provider::Update < Clamp::Command
 
-  SnapDeploy::CLI.subcommand           'update',      'Update snap deploy',     self
+  SnapProvision::CLI.subcommand           'update',      'Update snap provision',     self
 
-  include SnapDeploy::CLI::DefaultOptions
-  include SnapDeploy::Helpers
+  include SnapProvision::CLI::DefaultOptions
+  include SnapProvision::Helpers
   include Rake::FileUtilsExt
 
   option '--revision',

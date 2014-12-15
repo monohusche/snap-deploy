@@ -1,4 +1,4 @@
-module SnapDeploy
+module SnapProvision
   module Helpers
     def log(message)
       puts message
@@ -43,8 +43,8 @@ module SnapDeploy
       end
     end
 
-    def deploy_comment
-      comment = "Deploy build #{pipeline_counter}(rev #{short_commit}) via Snap CI"
+    def provision_comment
+      comment = "Provision environment for build #{pipeline_counter}(rev #{short_commit}) via Snap CI"
       comment << " by #{manually_triggered_by}" if manually_triggered_by
       comment
     end

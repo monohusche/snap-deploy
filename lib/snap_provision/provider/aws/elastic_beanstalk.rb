@@ -3,7 +3,7 @@ require 'json'
 require 'rake'
 require 'rake/file_utils_ext'
 
-class SnapDeploy::Provider::AWS::ElasticBeanstalk < Clamp::Command
+class SnapProvision::Provider::AWS::ElasticBeanstalk < Clamp::Command
 
   option '--app-name',
     'APP_NAME',

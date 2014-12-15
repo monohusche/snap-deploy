@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'snap_deploy/version'
+require 'snap_provision/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "snap_deploy"
-  spec.version       = SnapDeploy::VERSION
+  spec.name          = "snap_provision"
+  spec.version       = SnapProvision::VERSION
   spec.authors       = ["Snap CI"]
   spec.email         = ["support@snap-ci.com"]
-  spec.summary       = %q{Deploy your application in a Snap}
-  spec.description   = %q{A simple rubygem to help continuously deploy your application}
+  spec.summary       = %q{Provision an environment for snap}
+  spec.description   = %q{A simple rubygem to help provision an environment within a CI pipeline}
   spec.homepage      = "https://snap-ci.com"
   spec.license       = "MIT"
 

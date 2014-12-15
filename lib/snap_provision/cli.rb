@@ -1,6 +1,6 @@
 require 'clamp'
 
-module SnapDeploy
+module SnapProvision
 
   class CLI < Clamp::Command
 
@@ -8,7 +8,7 @@ module SnapDeploy
       def self.included(receiver)
         receiver.send :option, '--verbose', :flag, 'increase verbosity'
         receiver.send :option, '--version', :flag, 'display the version' do
-          puts "Snap Deploy v#{SnapDeploy::VERSION}"
+          puts "Snap Provision v#{SnapProvision::VERSION}"
           exit(0)
         end
       end

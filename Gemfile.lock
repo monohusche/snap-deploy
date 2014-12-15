@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    snap_deploy (0.1.1)
+    snap_provision (0.1.1)
       ansi
       aws-sdk
       clamp
@@ -68,4 +68,4 @@ DEPENDENCIES
   rake
   rspec
   simplecov
-  snap_deploy!
+  snap_provision!
